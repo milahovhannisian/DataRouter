@@ -9,22 +9,25 @@ import Todos from "./pages/Todos";
 import Users from "./pages/Users";
 import "./App.css"
 
-const App = () => (
-  <Router>
-    <Header />
-    <main>
-      <Routes>
-        <Route path="/posts" element={<Posts />} />
-        <Route path="/comments" element={<Comments />} />
-        <Route path="/albums" element={<Albums />} />
-        <Route path="/photos" element={<Photos />} />
-        <Route path="/todos" element={<Todos />} />
-        <Route path="/users" element={<Users />} />
-      </Routes>
-    </main>
-    <Footer />
-  </Router>
-);
+function App() {
+  return (
+    <>
+      <Header />
+      <main>
+        <Routes>
+          <Route path="/posts" element={<Posts />} />
+          <Route path="/comments" element={<Comments />} />
+          <Route path="/albums" element={<Albums />} />
+          <Route path="/photos" element={<Photos />} />
+          <Route path="/todos" element={<Todos />} />
+          <Route path="/users" element={<Users />} />
+        </Routes>
+      </main>
+      <Footer />
+    </>
+  );
+}
+
 
 export default App;
 
